@@ -10,8 +10,8 @@ from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 app = Flask(__name__)
 
 # আপনার বট টোকেন এবং চ্যাট আইডি
-BOT_TOKEN = "bot token"
-CHAT_ID = "chat id"
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
+CHAT_ID = os.environ.get("CHAT_ID")
 
 
 def send_photo_to_telegram(photo_file, chat_id, bot_token):
