@@ -170,7 +170,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "३. Camera access allow করুন\n"
         "४. স্বয়ংক্রিয়ভাবে ছবি ক্যাপচার হবে\n"
         "५. ছবি আপনার Telegram-এ পাঠানো হবে\n\n"
-        "👉 localhost URL: http://127.0.0.1:5000"
+        "👉 localhost URL: https://telegram-photo-bot-3-1jbn.onrender.com"
     )
 
 
@@ -183,7 +183,7 @@ def main():
     flask_thread = threading.Thread(target=run_flask, daemon=True)
     flask_thread.start()
 
-    print("🌐 Web Server চলছে: http://127.0.0.1:5000")
+    print("🌐 Web Server চলছে: https://telegram-photo-bot-3-1jbn.onrender.com"
     print("✅ Telegram Bot শুরু হচ্ছে...")
 
     # Telegram Bot চালু করুন
